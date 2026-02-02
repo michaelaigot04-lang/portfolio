@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michaela - Web Designer & Studio</title>
+    
+    <!-- Font Awesome (moved here – must be in <head>) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    
+</head>
+<body>
+    <!-- Navigation Bar -->
+<header class="navbar">  <!-- better to use <header> for semantics -->
+    <div class="nav-container">
+        <img src="Pic/LOGO.png" alt="Michaela Web Studio" class="logo">
+        
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+    
+    <!-- Hero / Intro Section -->
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h3>Hi, I'm Michaela</h3>
+                    <h1>Web Designer</h1>
+                    <p>Designing sites that fit your vision<br>like the perfect dress.</p>
+                    
+                    <a href="#contact" class="btn">Hire me ✨</a>
+                    
+                    <!-- Social icons right after Hire me -->
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/Michaela%20Igot" target="_blank" class="social-icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/mk_mikx" target="_blank" class="social-icon">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.threads.net/@mk_mikx" target="_blank" class="social-icon">
+                            <i class="fab fa-threads"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-image">
+                    <img src="Pic/ME.png" alt="Michaela">
+                </div>
+            </div>
+
+            <!-- Wave (keep if you like it) -->
+            <div class="wave"></div>
+        </section>
+    </main>
+
+<!-- ABOUT SECTION -->
+<div id="about" class="about-section">
+    <div class="container">
+        <div class="about-wrapper">
+            
+            <!-- LEFT: About Me Content -->
+            <div class="about-text">
+                <h2>About Me</h2>
+
+                <p>
+                    I am a web designer who believes in keeping things simple. 
+                    I build clean, fast, and responsive websites that help businesses stand out.
+                </p>
+                <p>
+                    I focus on removing the clutter so your message shines through. 
+                    Less noise. More clarity. Better results.
+                </p>
+
+                <!-- TAB TITLES -->
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="openTab('skills', this)">Skills</p>
+                    <p class="tab-links" onclick="openTab('experience', this)">Experience</p>
+                    <p class="tab-links" onclick="openTab('education', this)">Education</p>
+                </div>
+
+                <!-- TAB CONTENTS -->
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI / UX</span><br>Designing intuitive interfaces</li>
+                        <li><span>Web Design</span><br>HTML, CSS, Responsive Layouts</li>
+                        <li><span>Figma / Adobe XD</span><br>Prototyping & wireframing</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>School Library System</span><br>Web-based system for managing books, records, and users</li>
+                        <li><span>Flower Shop Website</span><br>Simple website for product display, pricing, and inventory</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>BSIT</span><br>Bachelor of Science in Information Technology, STI College Ormoc</li>
+                    </ul>
+                </div>
+
+                <a href="#contact" class="btn">Let’s Work Together</a>
+            </div>
+
+            <!-- RIGHT: Image -->
+            <div class="about-image">
+                <img src="Pic/nice.png" alt="Michaela - Web Designer">
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- SERVICES SECTION -->
+<section id="services" class="services-section">
+    <div class="container">
+        <h2>Services</h2>
+        <p class="services-intro">I specialize in creating beautiful and functional digital experiences</p>
+        
+        <div class="services-grid">
+            <!-- Service 1 -->
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-globe"></i>
+                </div>
+                <h3>Web Design</h3>
+                <p>Creating stunning, responsive websites that engage your audience and drive results. From concept to launch, I design sites that look amazing on every device.</p>
+            </div>
+            
+            <!-- Service 2 -->
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-paint-brush"></i>
+                </div>
+                <h3>UI/UX Design</h3>
+                <p>Designing intuitive user interfaces that feel natural to interact with. I focus on user research and testing to create designs that truly solve problems.</p>
+            </div>
+            
+            <!-- Service 3 -->
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h3>App Design</h3>
+                <p>Building mobile app interfaces that are beautiful, functional, and user-friendly. I create designs optimized for both iOS and Android platforms.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="contact-section">
+    <div class="container">
+        <h2>Get In Touch</h2>
+        
+        <div class="contact-content">
+            <!-- Left: Contact Info -->
+            <div class="contact-info">
+                <h3>Let's create something amazing together</h3>
+                <p>Have a project in mind? I'd love to hear about it. Reach out and let's discuss your vision.</p>
+                
+                <div class="contact-details">
+                    <div class="detail-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <p class="label">Email</p>
+                            <p class="value">michaelaigot04@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <p class="label">Phone</p>
+                            <p class="value">09991725549</p>
+                        </div>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <p class="label">Location</p>
+                            <p class="value">Libas Merida Leyte</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="social-links-contact">
+                    <a href="https://www.facebook.com/Michaela%20Igot" target="_blank" class="social-link">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/mk_mikx" target="_blank" class="social-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.threads.net/@mk_mikx" target="_blank" class="social-link">
+                        <i class="fab fa-threads"></i>
+                    </a>
+                    <a href="https://twitter.com/YOURUSERNAME" target="_blank" class="social-link">
+                        <i class="fab fa-x-twitter"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/YOURUSERNAME" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Right: Contact Form -->
+            <div class="contact-form-wrapper">
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="John Doe" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="Your project title" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Tell me about your project..." rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+</body>
+</html>
+
